@@ -36,14 +36,18 @@ shuffleTheDeck() {
 
   render() {
     // array to hold JSX elements
-    let cardImage1 = "http://golearntocode.com/images/cards/" + this.state.hand[0] + ".png"
-    let cardImage2 = "http://golearntocode.com/images/cards/" + this.state.hand[1] + ".png"
-    let cardImage3 =  "http://golearntocode.com/images/cards/" + this.state.hand[2] + ".png"
-    let cardImage4 = "http://golearntocode.com/images/cards/" + this.state.hand[3] + ".png"
-    let cardImage5 =  "http://golearntocode.com/images/cards/" + this.state.hand[4] + ".png"
+    let cardImage1 = "http://golearntocode.com/images/cards/" + this.state.hand[0] + ".png";
+    let cardImage2 = "http://golearntocode.com/images/cards/" + this.state.hand[1] + ".png";
+    let cardImage3 = "http://golearntocode.com/images/cards/" + this.state.hand[2] + ".png";
+    let cardImage4 = "http://golearntocode.com/images/cards/" + this.state.hand[3] + ".png";
+    let cardImage5 = "http://golearntocode.com/images/cards/" + this.state.hand[4] + ".png";
     return (
       <div className="App">
-        <img src = {cardImage1[0]} /> <img src = {cardImage2[1]} /> <img src = {cardImage3[2]} /> <img src = {cardImage4[3]} /> <img src = {cardImage5[4]} />
+        <img src = {cardImage1} />
+        <img src = {cardImage2} />
+        <img src = {cardImage3} />
+        <img src = {cardImage4} />
+        <img src = {cardImage5} />
         <p><button onClick ={() => this.shuffleTheDeck ()} >Deal a new hand</button></p>
       </div>
     );
